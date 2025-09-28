@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Button Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text-to-Button Generator</h1>
+        <label for="text-input">Paste Text:</label>
+        <textarea id="text-input" placeholder="Paste your text here, one line per button."></textarea>
+        <button id="generate-urls">Generate URL Inputs</button>
+
+        <div id="url-inputs"></div>
+
+        <div class="actions">
+            <button id="generate-buttons">Generate Buttons</button>
+            <button id="randomize-colors">Randomize Colors</button>
+        </div>
+
+        <div id="button-preview-container" class="left-aligned"></div>
+
+        <h2>Generated Code</h2>
+        <textarea id="output-code" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

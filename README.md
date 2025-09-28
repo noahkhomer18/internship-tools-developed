@@ -24,6 +24,11 @@ A comprehensive calculator that helps businesses understand the true cost of pai
 
 **Technologies**: HTML5, CSS3, JavaScript ES6+, Chart.js
 
+### [Text-to-Button Generator](./text-to-button-generator/)
+A powerful web application that converts text input into styled HTML buttons with customizable URLs and random color generation. Perfect for quickly creating button collections for websites and web projects.
+
+**Technologies**: HTML5, CSS3, JavaScript ES6+
+
 ## 📁 Project Structure
 
 ```
@@ -47,6 +52,11 @@ internship-tools-developed/
 │   ├── index.html                # Main HTML file with form structure
 │   ├── styles.css                # CSS styling and responsive design
 │   ├── script.js                 # JavaScript functionality and calculations
+│   └── README.md                 # Tool documentation
+├── text-to-button-generator/    # Text-to-Button Generator
+│   ├── index.html                # Main HTML file with form structure
+│   ├── styles.css                # CSS styling and responsive design
+│   ├── script.js                 # JavaScript functionality
 │   └── README.md                 # Tool documentation
 ├── [additional-tools]/          # Future tools will be added here
 └── README.md                     # This main documentation
@@ -90,6 +100,9 @@ Each tool in this collection follows consistent development standards:
 
 ### Business Analytics Tools
 - **True Cost of Paid Ads Calculator**: Analyze paid advertising costs and calculate savings from organic traffic growth
+
+### Web Development Tools
+- **Text-to-Button Generator**: Convert text input into styled HTML buttons with customizable URLs and random color generation
 
 ### [Additional categories will be added as more tools are developed]
 
