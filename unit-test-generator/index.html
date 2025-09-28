@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Test Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🧪 Unit Test Generator</h1>
+            <p class="subtitle">Generate starter unit tests from function signatures automatically</p>
+        </header>
+
+        <div class="main-content">
+            <div class="input-section">
+                <div class="language-selector">
+                    <label for="language">Testing Framework:</label>
+                    <select id="language" onchange="updateFramework()">
+                        <option value="jest">Jest (JavaScript/TypeScript)</option>
+                        <option value="mocha">Mocha (JavaScript)</option>
+                        <option value="jasmine">Jasmine (JavaScript)</option>
+                        <option value="vitest">Vitest (JavaScript/TypeScript)</option>
+                        <option value="pytest">PyTest (Python)</option>
+                        <option value="unittest">Unittest (Python)</option>
+                        <option value="junit">JUnit (Java)</option>
+                        <option value="rspec">RSpec (Ruby)</option>
+                    </select>
+                </div>
+
+                <div class="function-input">
+                    <label for="function-signature">Function Signature:</label>
+                    <textarea id="function-signature" placeholder="Enter your function signature here...&#10;&#10;Examples:&#10;function calculateTotal(price, tax, discount) { }&#10;async function fetchUserData(userId) { }&#10;def process_data(data: list, threshold: int) -> bool:&#10;public int addNumbers(int a, int b) { }"></textarea>
+                </div>
+
+                <div class="options-section">
+                    <h3>Test Options</h3>
+                    <div class="options-grid">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="include-edge-cases" checked>
+                            <span class="checkmark"></span>
+                            Include edge cases
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="include-error-tests" checked>
+                            <span class="checkmark"></span>
+                            Include error handling tests
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="include-async-tests" checked>
+                            <span class="checkmark"></span>
+                            Include async/await tests
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="include-mock-tests">
+                            <span class="checkmark"></span>
+                            Include mock tests
+                        </label>
+                    </div>
+                </div>
+
+                <button id="generate-tests" class="generate-btn">Generate Unit Tests</button>
+            </div>
+
+            <div class="output-section">
+                <div class="output-header">
+                    <h3>Generated Unit Tests</h3>
+                    <div class="output-actions">
+                        <button id="copy-tests" class="action-btn">Copy to Clipboard</button>
+                        <button id="download-tests" class="action-btn">Download File</button>
+                    </div>
+                </div>
+                <pre id="test-output" class="code-output"></pre>
+            </div>
+        </div>
+
+        <div class="examples-section">
+            <h3>💡 Example Function Signatures</h3>
+            <div class="examples-grid">
+                <div class="example-card" onclick="loadExample('javascript')">
+                    <h4>JavaScript</h4>
+                    <code>function calculateTotal(price, tax, discount)</code>
+                </div>
+                <div class="example-card" onclick="loadExample('async')">
+                    <h4>Async Function</h4>
+                    <code>async function fetchUserData(userId)</code>
+                </div>
+                <div class="example-card" onclick="loadExample('python')">
+                    <h4>Python</h4>
+                    <code>def process_data(data: list, threshold: int) -> bool</code>
+                </div>
+                <div class="example-card" onclick="loadExample('java')">
+                    <h4>Java</h4>
+                    <code>public int addNumbers(int a, int b)</code>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

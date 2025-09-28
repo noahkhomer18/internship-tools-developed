@@ -34,6 +34,11 @@ An interactive memory game themed around the popular Among Us reactor sabotage m
 
 **Technologies**: HTML5, CSS3, JavaScript ES6+, Chart.js
 
+### [Unit Test Generator](./unit-test-generator/)
+A powerful web application that automatically generates starter unit tests from function signatures. Supports multiple testing frameworks (Jest, Mocha, PyTest, JUnit, etc.) and programming languages with intelligent test case generation.
+
+**Technologies**: HTML5, CSS3, JavaScript ES6+
+
 ## 📁 Project Structure
 
 ```
@@ -67,6 +72,11 @@ internship-tools-developed/
 │   ├── index.html                # Main HTML file with game structure
 │   ├── styles.css                # CSS styling with space theme
 │   ├── script.js                 # JavaScript game logic
+│   └── README.md                 # Tool documentation
+├── unit-test-generator/         # Unit Test Generator
+│   ├── index.html                # Main HTML file with interface
+│   ├── styles.css                # CSS styling and responsive design
+│   ├── script.js                 # JavaScript functionality and generators
 │   └── README.md                 # Tool documentation
 ├── [additional-tools]/          # Future tools will be added here
 └── README.md                     # This main documentation
@@ -116,6 +126,9 @@ Each tool in this collection follows consistent development standards:
 
 ### Gaming & Entertainment
 - **Among Us Reactor Sabotage**: Interactive memory game themed around reactor sabotage mechanics with performance tracking
+
+### Development Tools
+- **Unit Test Generator**: Automatically generate starter unit tests from function signatures for multiple frameworks and languages
 
 ### [Additional categories will be added as more tools are developed]
 
