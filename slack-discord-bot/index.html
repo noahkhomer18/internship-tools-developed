@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack/Discord Bot Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🤖 Slack/Discord Bot Builder</h1>
+            <p class="subtitle">Create intelligent bots for team communication and automation</p>
+        </header>
+
+        <div class="main-content">
+            <div class="bot-config">
+                <div class="config-section">
+                    <h2>Bot Configuration</h2>
+                    
+                    <div class="form-group">
+                        <label for="bot-name">Bot Name:</label>
+                        <input type="text" id="bot-name" placeholder="MyAwesomeBot" value="TeamBot">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="platform">Platform:</label>
+                        <select id="platform" onchange="updatePlatform()">
+                            <option value="slack">Slack</option>
+                            <option value="discord">Discord</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bot-token">Bot Token:</label>
+                        <input type="password" id="bot-token" placeholder="xoxb-your-bot-token-here">
+                        <small>Keep your token secure! This is for demonstration only.</small>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <h2>Bot Features</h2>
+                    
+                    <div class="feature-card">
+                        <h3>📅 Reminders</h3>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="reminders-enabled" checked>
+                            <span class="checkmark"></span>
+                            Enable reminder functionality
+                        </label>
+                        <div class="feature-options" id="reminders-options">
+                            <input type="text" id="reminder-keywords" placeholder="Keywords: remind, schedule, todo" value="remind, schedule, todo">
+                            <input type="number" id="reminder-interval" placeholder="Check interval (minutes)" value="5">
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>🔍 Keyword Reactions</h3>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="reactions-enabled" checked>
+                            <span class="checkmark"></span>
+                            Enable keyword reactions
+                        </label>
+                        <div class="feature-options" id="reactions-options">
+                            <textarea id="reaction-keywords" placeholder="Enter keywords and reactions (one per line):&#10;good job :thumbsup:&#10;congratulations :tada:&#10;help :sos:">good job :thumbsup:
+congratulations :tada:
+help :sos:
+thanks :heart:</textarea>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>🌤️ Weather Data</h3>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="weather-enabled">
+                            <span class="checkmark"></span>
+                            Enable weather fetching
+                        </label>
+                        <div class="feature-options" id="weather-options">
+                            <input type="text" id="weather-api-key" placeholder="OpenWeatherMap API Key">
+                            <input type="text" id="weather-keywords" placeholder="Keywords: weather, forecast, temperature" value="weather, forecast, temperature">
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>😄 Jokes & Fun</h3>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="jokes-enabled" checked>
+                            <span class="checkmark"></span>
+                            Enable jokes and fun responses
+                        </label>
+                        <div class="feature-options" id="jokes-options">
+                            <input type="text" id="joke-keywords" placeholder="Keywords: joke, funny, humor" value="joke, funny, humor, lol">
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>📰 Company News</h3>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="news-enabled">
+                            <span class="checkmark"></span>
+                            Enable company news fetching
+                        </label>
+                        <div class="feature-options" id="news-options">
+                            <input type="text" id="news-keywords" placeholder="Keywords: news, update, company" value="news, update, company">
+                            <input type="url" id="news-rss-url" placeholder="RSS Feed URL (optional)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-output">
+                <div class="output-header">
+                    <h2>Generated Bot Code</h2>
+                    <div class="output-actions">
+                        <button id="generate-code" class="action-btn primary">Generate Code</button>
+                        <button id="copy-code" class="action-btn">Copy Code</button>
+                        <button id="download-code" class="action-btn">Download</button>
+                    </div>
+                </div>
+                <pre id="bot-code" class="code-output"></pre>
+            </div>
+        </div>
+
+        <div class="setup-instructions">
+            <h2>🚀 Setup Instructions</h2>
+            <div class="instructions-grid">
+                <div class="instruction-card">
+                    <h3>Slack Setup</h3>
+                    <ol>
+                        <li>Go to <a href="https://api.slack.com/apps" target="_blank">Slack API</a></li>
+                        <li>Create a new app and get your bot token</li>
+                        <li>Add bot to your workspace</li>
+                        <li>Copy the generated code to your server</li>
+                        <li>Install dependencies: <code>npm install @slack/bolt</code></li>
+                    </ol>
+                </div>
+                <div class="instruction-card">
+                    <h3>Discord Setup</h3>
+                    <ol>
+                        <li>Go to <a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a></li>
+                        <li>Create a new application and bot</li>
+                        <li>Get your bot token and invite to server</li>
+                        <li>Copy the generated code to your server</li>
+                        <li>Install dependencies: <code>npm install discord.js</code></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

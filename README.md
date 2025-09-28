@@ -39,6 +39,11 @@ A powerful web application that automatically generates starter unit tests from 
 
 **Technologies**: HTML5, CSS3, JavaScript ES6+
 
+### [Slack/Discord Bot Builder](./slack-discord-bot/)
+A comprehensive web application that generates intelligent bots for team communication platforms. Create custom bots with reminders, keyword reactions, weather data, jokes, and news fetching capabilities.
+
+**Technologies**: HTML5, CSS3, JavaScript ES6+
+
 ## 📁 Project Structure
 
 ```
@@ -74,6 +79,11 @@ internship-tools-developed/
 │   ├── script.js                 # JavaScript game logic
 │   └── README.md                 # Tool documentation
 ├── unit-test-generator/         # Unit Test Generator
+│   ├── index.html                # Main HTML file with interface
+│   ├── styles.css                # CSS styling and responsive design
+│   ├── script.js                 # JavaScript functionality and generators
+│   └── README.md                 # Tool documentation
+├── slack-discord-bot/           # Slack/Discord Bot Builder
 │   ├── index.html                # Main HTML file with interface
 │   ├── styles.css                # CSS styling and responsive design
 │   ├── script.js                 # JavaScript functionality and generators
@@ -129,6 +139,7 @@ Each tool in this collection follows consistent development standards:
 
 ### Development Tools
 - **Unit Test Generator**: Automatically generate starter unit tests from function signatures for multiple frameworks and languages
+- **Slack/Discord Bot Builder**: Generate intelligent bots for team communication with reminders, reactions, weather, and news features
 
 ### [Additional categories will be added as more tools are developed]
 
