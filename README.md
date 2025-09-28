@@ -19,6 +19,11 @@ An enhanced version of the vision simulator with an improved button-based interf
 
 **Technologies**: HTML5, CSS3, JavaScript ES6+
 
+### [True Cost of Paid Ads Calculator](./paid-ads-calculator/)
+A comprehensive calculator that helps businesses understand the true cost of paid advertising and calculate potential savings from organic traffic growth. Features industry-specific data, interactive charts, and detailed financial analysis.
+
+**Technologies**: HTML5, CSS3, JavaScript ES6+, Chart.js
+
 ## 📁 Project Structure
 
 ```
@@ -37,6 +42,11 @@ internship-tools-developed/
 │   ├── index.html                # Main HTML file with button interface
 │   ├── styles.css                # Enhanced CSS styling
 │   ├── script.js                 # Optimized JavaScript
+│   └── README.md                 # Tool documentation
+├── paid-ads-calculator/         # True Cost of Paid Ads Calculator
+│   ├── index.html                # Main HTML file with form structure
+│   ├── styles.css                # CSS styling and responsive design
+│   ├── script.js                 # JavaScript functionality and calculations
 │   └── README.md                 # Tool documentation
 ├── [additional-tools]/          # Future tools will be added here
 └── README.md                     # This main documentation
@@ -77,6 +87,9 @@ Each tool in this collection follows consistent development standards:
 ### Accessibility Tools
 - **Vision Impairment Simulator**: Simulate various vision conditions to understand accessibility challenges
 - **Vision Impairment Simulator V2**: Enhanced version with button-based interface for improved user experience
+
+### Business Analytics Tools
+- **True Cost of Paid Ads Calculator**: Analyze paid advertising costs and calculate savings from organic traffic growth
 
 ### [Additional categories will be added as more tools are developed]
 

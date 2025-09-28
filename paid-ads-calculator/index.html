@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>True Cost of Paid Ads Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header-banner">
+        <h1 class="banner-title">True Cost of Paid Ads Calculator</h1>
+        <p class="banner-subtitle">Find out how much you can save by growing your website traffic organically instead of relying on paid ads.</p>
+    </header>
+
+    <!-- Step 1: All industries in a single grid -->
+    <div class="all-industries-grid" id="allIndustriesGrid">
+        <!-- Industries inserted by JS -->
+    </div>
+
+    <!-- Step 2: Three-column layout (initially hidden) -->
+    <div class="page-container" style="display:none;" id="threeColumnLayout">
+        <div class="content-container">
+            <!-- Left Column (7 Industries) -->
+            <aside class="side-column" id="left-column">
+                <h2 class="sidebar-title">Industries</h2>
+                <div class="industry-list" id="left-industry-list"></div>
+            </aside>
+
+            <!-- Middle Column (Main Tool) -->
+            <main class="main-column" id="mainColumn">
+                <div id="selected-industry-description" style="display:none;" class="industry-description"></div>
+
+                <div id="form-container">
+                    <form id="ad-cost-form">
+                        <div class="form-group">
+                            <label for="monthly-spend">Monthly Ad Spend ($):</label>
+                            <input type="text" id="monthly-spend" placeholder="e.g. 2000" oninput="updateGraphs()">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cost-per-click">Estimated Cost Per Click ($):</label>
+                            <input type="number" id="cost-per-click" value="15" oninput="updateGraphs()">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="organic-traffic-growth">Organic Traffic Growth Rate (%):</label>
+                            <input type="number" id="organic-traffic-growth" value="5" step="0.1" oninput="updateGraphs()">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="starting-organic-traffic">Starting Organic Traffic (Visits/Month):</label>
+                            <input type="text" id="starting-organic-traffic" placeholder="e.g. 1500" oninput="updateGraphs()" required>
+                        </div>
+                    </form>
+
+                    <div style="text-align:center; margin-top:20px;">
+                        <button type="button" id="toggle-details-btn" class="results-toggle-btn" style="display:none;" onclick="toggleAllDetails()">Click Here to Open All Results</button>
+                    </div>
+
+                    <div id="results" class="results-container"></div>
+
+                    <div id="charts-container" style="display:none;">
+                        <canvas id="comparison-chart"></canvas>
+                        <p id="comparison-text">This bar chart shows your monthly ad spend versus the monthly value of your organic traffic. If your organic value is high, you depend less on paid ads.</p>
+
+                        <canvas id="growth-chart"></canvas>
+                        <p id="growth-text">This line chart shows how your organic traffic can grow each month, giving you more free visitors over time.</p>
+
+                        <canvas id="savings-chart"></canvas>
+                        <p id="savings-text">This pie chart compares your yearly ad spend to what you could save by focusing on organic growth instead of ads.</p>
+                    </div>
+
+                    <div class="button-row">
+                        <button type="button" class="start-over-btn" onclick="resetToInitialState()">Start Over</button>
+                        <button type="button" class="clear-btn" onclick="clearForm()">Clear Form</button>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Right Column (7 Industries) -->
+            <aside class="side-column" id="right-column">
+                <h2 class="sidebar-title">Industries</h2>
+                <div class="industry-list" id="right-industry-list"></div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2025 Noah Khomer
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
