@@ -9,6 +9,11 @@ A React-based calculator that helps users determine their GAP insurance coverage
 
 **Technologies**: React.js, HTML5, CSS3, JavaScript ES6+
 
+### [Vision Impairment Simulator](./vision-impairment-simulator/)
+An interactive web application that simulates various vision impairments to help users understand how different eye conditions affect visual perception. Features side-by-side comparisons and educational content about visual impairments.
+
+**Technologies**: HTML5, CSS3, JavaScript ES6+
+
 ## 📁 Project Structure
 
 ```
@@ -17,6 +22,11 @@ internship-tools-developed/
 │   ├── index.html                # Main HTML file
 │   ├── styles.css                # CSS styling
 │   ├── script.js                 # React component logic
+│   └── README.md                 # Tool documentation
+├── vision-impairment-simulator/  # Vision Impairment Simulator tool
+│   ├── index.html                # Main HTML file
+│   ├── styles.css                # CSS styling
+│   ├── script.js                 # JavaScript functionality
 │   └── README.md                 # Tool documentation
 ├── [additional-tools]/          # Future tools will be added here
 └── README.md                     # This main documentation
@@ -53,6 +63,9 @@ Each tool in this collection follows consistent development standards:
 
 ### Financial Calculators
 - **GAP Insurance Calculator**: Calculate GAP insurance coverage and understand policy differences
+
+### Accessibility Tools
+- **Vision Impairment Simulator**: Simulate various vision conditions to understand accessibility challenges
 
 ### [Additional categories will be added as more tools are developed]
 

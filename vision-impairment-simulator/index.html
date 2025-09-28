@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vision Impairment Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="top-banner-container" id="topBanner">
+    <h1>Select a Vision Problem</h1>
+    <p>Details about the selected condition will appear here.</p>
+    <div class="dropdown-container">
+        <select id="visionSelect">
+            <option value="">-- Select Vision Problem --</option>
+            <option value="blurred_vision">Blurred Vision</option>
+            <option value="glaucoma">Glaucoma</option>
+            <option value="cataracts">Cataracts</option>
+            <option value="macular_degeneration">Macular Degeneration</option>
+            <option value="night_blindness">Night Blindness</option>
+            <option value="achromatopsia">Achromatopsia (No Color)</option>
+            <option value="reduced_contrast">Reduced Contrast</option>
+            <option value="glare">Glare/Haze</option>
+            <option value="yellow_tint">Yellow Tint</option>
+            <option value="dim_vision">Dim Vision</option>
+            <option value="tunnel_vision">Tunnel Vision</option>
+        </select>
+
+        <select id="imageSelect">
+            <option value="">-- Select Image --</option>
+            <option value="family_dinner">Family Dinner</option>
+            <option value="freeway_entrance_signs">Freeway Entrance Signs</option>
+            <option value="game_day_snacks">Game Day Snacks</option>
+            <option value="gentle_stream_rolling_through_the_woods">Gentle Stream Rolling Through The Woods</option>
+            <option value="houston_tx_skyline_on_a_sunny_day">Houston TX Skyline On A Sunny Day</option>
+            <option value="looking_down_a_supermarket_aisle">Looking Down A Supermarket Aisle</option>
+            <option value="playing_with_children_in_the_backyard">Playing With Children In The Backyard</option>
+            <option value="reading_a_restaurant_menu">Reading A Restaurant Menu</option>
+            <option value="shopping_at_the_farmers_market">Shopping At The Farmers Market</option>
+            <option value="using_my_smartphone">Using My Smartphone</option>
+            <option value="walking_along_a_garden_path">Walking Along A Garden Path</option>
+            <option value="watching_a_movie_at_home">Watching A Movie At Home</option>
+            <option value="christmas_morning">Christmas Morning</option>
+            <option value="crossing_a_busy_street">Crossing A Busy Street</option>
+        </select>
+    </div>
+</div>
+
+<div class="impairment-info" id="impairmentInfo">
+    <h2 id="impairmentTitle">No Impairment Selected</h2>
+    <p id="impairmentDesc">Select a vision problem to see its details.</p>
+</div>
+
+<div class="content-container">
+    <div class="viewer-container">
+        <div class="viewer-box" id="perfectVisionViewer">
+            <div class="inner" id="perfectInner"></div>
+        </div>
+        <div class="viewer-box" id="simviewer">
+            <div class="inner" id="siminner"></div>
+        </div>
+    </div>
+</div>
+
+<footer>© 2025 Noah Khomer</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
