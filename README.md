@@ -29,6 +29,11 @@ A powerful web application that converts text input into styled HTML buttons wit
 
 **Technologies**: HTML5, CSS3, JavaScript ES6+
 
+### [Among Us Reactor Sabotage](./among-us-reactor-sabotage/)
+An interactive memory game themed around the popular Among Us reactor sabotage mechanic. Players must memorize and repeat reactor repair sequences to prevent ship meltdown while tracking their performance with real-time analytics.
+
+**Technologies**: HTML5, CSS3, JavaScript ES6+, Chart.js
+
 ## 📁 Project Structure
 
 ```
@@ -57,6 +62,11 @@ internship-tools-developed/
 │   ├── index.html                # Main HTML file with form structure
 │   ├── styles.css                # CSS styling and responsive design
 │   ├── script.js                 # JavaScript functionality
+│   └── README.md                 # Tool documentation
+├── among-us-reactor-sabotage/  # Among Us Reactor Sabotage Game
+│   ├── index.html                # Main HTML file with game structure
+│   ├── styles.css                # CSS styling with space theme
+│   ├── script.js                 # JavaScript game logic
 │   └── README.md                 # Tool documentation
 ├── [additional-tools]/          # Future tools will be added here
 └── README.md                     # This main documentation
@@ -103,6 +113,9 @@ Each tool in this collection follows consistent development standards:
 
 ### Web Development Tools
 - **Text-to-Button Generator**: Convert text input into styled HTML buttons with customizable URLs and random color generation
+
+### Gaming & Entertainment
+- **Among Us Reactor Sabotage**: Interactive memory game themed around reactor sabotage mechanics with performance tracking
 
 ### [Additional categories will be added as more tools are developed]
 
