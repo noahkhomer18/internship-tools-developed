@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vision Impairment Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="vision-simulator-container">
+    <h1>Eye Vision Problem Simulator - Noah</h1>
+
+    <div class="options-group">
+        <h2>Select a Vision Problem:</h2>
+        <div class="options-row" id="vision-options">
+            <!-- Original Conditions -->
+            <button class="option-btn" data-vision="blurred_vision">Blurred Vision</button>
+            <button class="option-btn" data-vision="glaucoma">Glaucoma</button>
+            <button class="option-btn" data-vision="cataracts">Cataracts</button>
+            <button class="option-btn" data-vision="macular_degeneration">Macular Degeneration</button>
+            <button class="option-btn" data-vision="night_blindness">Night Blindness</button>
+            <!-- New Conditions -->
+            <button class="option-btn" data-vision="achromatopsia">Achromatopsia (No Color)</button>
+            <button class="option-btn" data-vision="reduced_contrast">Reduced Contrast</button>
+            <button class="option-btn" data-vision="glare">Glare/Haze</button>
+            <button class="option-btn" data-vision="yellow_tint">Yellow Tint</button>
+            <button class="option-btn" data-vision="dim_vision">Dim Vision</button>
+            <button class="option-btn" data-vision="tunnel_vision">Tunnel Vision</button>
+        </div>
+    </div>
+
+    <div class="options-group">
+        <h2>Select an Image:</h2>
+        <div class="options-row" id="image-options">
+            <button class="option-btn" data-image="family_dinner">Family Dinner</button>
+            <button class="option-btn" data-image="freeway_entrance_signs">Freeway Entrance Signs</button>
+            <button class="option-btn" data-image="game_day_snacks">Game Day Snacks</button>
+            <button class="option-btn" data-image="gentle_stream_rolling_through_the_woods">Gentle Stream in Woods</button>
+            <button class="option-btn" data-image="houston_tx_skyline_on_a_sunny_day">Houston TX Skyline</button>
+            <button class="option-btn" data-image="looking_down_a_supermarket_aisle">Supermarket Aisle</button>
+            <button class="option-btn" data-image="playing_with_children_in_the_backyard">Playing in Backyard</button>
+            <button class="option-btn" data-image="reading_a_restaurant_menu">Reading a Restaurant Menu</button>
+            <button class="option-btn" data-image="shopping_at_the_farmers_market">Shopping at Farmers Market</button>
+            <button class="option-btn" data-image="using_my_smartphone">Using My Smartphone</button>
+            <button class="option-btn" data-image="walking_along_a_garden_path">Walking in a Garden Path</button>
+            <button class="option-btn" data-image="watching_a_movie_at_home">Watching a Movie at Home</button>
+            <button class="option-btn" data-image="christmas_morning">Christmas Morning</button>
+            <button class="option-btn" data-image="crossing_a_busy_street">Crossing a Busy Street</button>
+        </div>
+    </div>
+
+    <div style="flex-basis:100%;text-align:center;">
+        <span class="viewer-label">Perfect Vision (Left) vs. Impaired Vision (Right)</span>
+    </div>
+    <div class="viewer-container">
+        <!-- Left side: Perfect Vision -->
+        <div class="viewer-box" id="perfectVisionViewer">
+            <div class="inner" id="perfectInner"></div>
+        </div>
+
+        <!-- Right side: Impaired Vision -->
+        <div class="viewer-box" id="simviewer">
+            <div class="inner" id="siminner"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

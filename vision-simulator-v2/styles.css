@@ -1,0 +1,119 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #f0f0f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.vision-simulator-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.vision-simulator-container h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #A62B0C;
+    font-weight: 600;
+}
+
+.options-group {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.options-group h2 {
+    font-size: 18px;
+    color: #A62B0C;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.options-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.option-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-weight: 500;
+}
+
+.option-btn:hover {
+    border-color: #A62B0C;
+}
+
+.option-btn.active {
+    background: #A62B0C;
+    border-color: #A62B0C;
+    color: #fff;
+}
+
+.viewer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.viewer-box {
+    background: #eaeaea center center no-repeat;
+    background-size: cover;
+    border: 1px solid #ddd;
+    position: relative;
+    transition: all 500ms ease;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 450px; 
+    max-width: 500px;
+}
+
+.viewer-box .inner {
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 42.41%; /* aspect ratio */
+    position: relative;
+}
+
+.viewer-label {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Blur Classes */
+.active1 { filter: blur(1px); }
+.active2 { filter: blur(2px); }
+.active3 { filter: blur(3px); }
+.active4 { filter: blur(4px); }
+.active5 { filter: blur(5px); }
+.active6 { filter: blur(6px); }
+.active7 { filter: blur(7px); }
+.active8 { filter: blur(8px); }
+.active9 { filter: blur(9px); }
+.active10 { filter: blur(10px); }
+
+@media (max-width: 480px) {
+    .vision-simulator-container {
+        padding: 30px 20px;
+    }
+    .vision-simulator-container h1 {
+        font-size: 24px;
+    }
+}

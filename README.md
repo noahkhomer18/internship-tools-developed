@@ -14,6 +14,11 @@ An interactive web application that simulates various vision impairments to help
 
 **Technologies**: HTML5, CSS3, JavaScript ES6+
 
+### [Vision Impairment Simulator V2](./vision-simulator-v2/)
+An enhanced version of the vision simulator with an improved button-based interface. Features intuitive button selection, better mobile experience, and streamlined user interaction for easier accessibility testing and education.
+
+**Technologies**: HTML5, CSS3, JavaScript ES6+
+
 ## 📁 Project Structure
 
 ```
@@ -27,6 +32,11 @@ internship-tools-developed/
 │   ├── index.html                # Main HTML file
 │   ├── styles.css                # CSS styling
 │   ├── script.js                 # JavaScript functionality
+│   └── README.md                 # Tool documentation
+├── vision-simulator-v2/         # Enhanced Vision Simulator V2
+│   ├── index.html                # Main HTML file with button interface
+│   ├── styles.css                # Enhanced CSS styling
+│   ├── script.js                 # Optimized JavaScript
 │   └── README.md                 # Tool documentation
 ├── [additional-tools]/          # Future tools will be added here
 └── README.md                     # This main documentation
@@ -66,6 +76,7 @@ Each tool in this collection follows consistent development standards:
 
 ### Accessibility Tools
 - **Vision Impairment Simulator**: Simulate various vision conditions to understand accessibility challenges
+- **Vision Impairment Simulator V2**: Enhanced version with button-based interface for improved user experience
 
 ### [Additional categories will be added as more tools are developed]
 
